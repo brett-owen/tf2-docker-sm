@@ -1,0 +1,13 @@
+[Unit]
+Description=BBALL Docker Container
+Requires=docker.service
+After=docker.service
+
+[Service]
+User=root
+Restart=always
+ExecStart=/usr/bin/docker start -a bball
+ExecStop=/usr/bin/docker stop -t 2 bball
+
+[Install]
+WantedBy=default.target
