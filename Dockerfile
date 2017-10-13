@@ -1,4 +1,4 @@
-FROM brettowen/tf2-server-base
+FROM brettowen/tf2-docker-base
 
 MAINTAINER Brett Owen <brett@brettowen.ca>
 
