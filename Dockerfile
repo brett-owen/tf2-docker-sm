@@ -9,13 +9,6 @@ RUN wget https://sm.alliedmods.net/smdrop/1.8/sourcemod-1.8.0-git6027-linux.tar.
 RUN tar -xvzf sourcemod-1.8.0-git6027-linux.tar.gz
 
 ADD metamod.vdf /home/steam/steamcmd/tf2/tf/addons/metamod.vdf
-ADD startserver.sh /home/steam/steamcmd/startserver.sh
-
-ENV MAP="cp_badlands"
-ENV SV_MAXPLAYERS=12
-ENV SV_HOSTNAME="changeme"
-ENV RCON_PASSWORD="changeme"
-ENV SV_PORT=27015
 
 EXPOSE 27015 27015/udp
 
